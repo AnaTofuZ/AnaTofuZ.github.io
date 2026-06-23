@@ -16,11 +16,7 @@ export const Layout: FC<PropsWithChildren<{ title?: string }>> = ({
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/favicon/manifest.json" />
 
-      <link
-        href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-        rel="stylesheet"
-      />
-      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="/css/main.css" rel="stylesheet" />
 
       <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
