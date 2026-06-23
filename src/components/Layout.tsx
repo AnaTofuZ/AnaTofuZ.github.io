@@ -23,19 +23,13 @@ export const Layout: FC<PropsWithChildren<{ title?: string }>> = ({
       <script src="https://cdn.tailwindcss.com"></script>
 
       <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous"
-      />
-
-      <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet"
       />
       <style
         dangerouslySetInnerHTML={{
-          __html: 'body { font-family: "Noto Sans JP", sans-serif; }',
+          __html:
+            'body { font-family: "Noto Sans JP", sans-serif; } .svg-inline--fa { display: inline-block; height: 1em; overflow: visible; vertical-align: -0.125em; }',
         }}
       />
     </head>

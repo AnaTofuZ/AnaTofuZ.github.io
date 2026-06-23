@@ -8,6 +8,9 @@
     "format": "biome check --write src/ build.ts"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "hono": "^4.7.4"
   },
   "devDependencies": {

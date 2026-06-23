@@ -1,15 +1,22 @@
+import {
+  faFacebook,
+  faGithub,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 export const siteTitle = "AnaTofuZ's page";
 
 export const profile = {
-  name: "Takahiro Shimizu",
+  name: "清水隆博　(Takahiro Shimizu)",
   handle: "@AnaTofuZ",
-  location: "甲府@山梨",
+  location: "山梨県甲府市",
   photo: "/images/icon.png",
   socials: [
-    { icon: "fab fa-github", url: "https://github.com/AnaTofuZ" },
-    { icon: "fab fa-twitter", url: "https://twitter.com/AnaTofuZ" },
-    { icon: "fab fa-facebook", url: "https://www.facebook.com/AnaTofuZ/" },
-    { icon: "fas fa-envelope", url: "mailto:anatofuz@gmail.com" },
+    { icon: faGithub, url: "https://github.com/AnaTofuZ" },
+    { icon: faXTwitter, url: "https://x.com/AnaTofuZ" },
+    { icon: faFacebook, url: "https://www.facebook.com/AnaTofuZ/" },
+    { icon: faEnvelope, url: "mailto:anatofuz@gmail.com" },
   ],
 };
 
@@ -19,34 +26,40 @@ export const nav = [
   { label: "Diary", url: "https://anatofuz.hatenadiary.com/" },
 ];
 
-export const about =
-  "沖縄でCbCやPerlを書いた後で京都でPerlでwebアプリケーションをやっていましたが、最近は山梨でRailsをしています";
-
-export const experiences = [
+export const careerTimeline = [
   {
-    role: "webアプリケーションエンジニア",
-    entries: [
-      {
-        period: "2025/01/01 - 現在",
-        company: "株式会社コードタクト",
-        url: "https://codetakt.com/",
-      },
-      {
-        period: "2021/04/01 - 2024/12/31",
-        company: "株式会社はてな",
-        url: "https://hatena.co.jp/",
-      },
-    ],
+    period: "2015 - 2019",
+    title: "琉球大学工学部情報工学科",
+    subtitle: "学士(工学)",
+    type: "education" as const,
   },
-];
-
-export const education = [
   {
-    degree: "修士(工学)",
     period: "2019 - 2021",
-    school: "琉球大学大学院理工学研究科情報工学専攻",
+    title: "琉球大学大学院理工学研究科情報工学専攻",
+    subtitle: "修士(工学)",
+    type: "education" as const,
   },
-  { degree: "学部", period: "2015 - 2019", school: "琉球大学工学部情報工学科" },
+  {
+    period: "2021/04 - 2024/12",
+    title: "株式会社はてな",
+    url: "https://hatena.co.jp/",
+    subtitle: "webアプリケーションエンジニア (ノベルチーム)",
+    type: "work" as const,
+  },
+  {
+    period: "2025/01 - 2026/05",
+    title: "株式会社コードタクト",
+    url: "https://codetakt.com/",
+    subtitle: "webアプリケーションエンジニア",
+    type: "work" as const,
+  },
+  {
+    period: "2026/06 - 現在",
+    title: "Tebiki株式会社",
+    url: "https://tebiki.co.jp/",
+    subtitle: "webアプリケーションエンジニア",
+    type: "work" as const,
+  },
 ];
 
 export const projects = [
