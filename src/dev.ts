@@ -1,8 +1,8 @@
 import { readFile } from "node:fs/promises";
+import tailwindcssPlugin from "@tailwindcss/postcss";
 import { Hono } from "hono";
 import { serveStatic } from "hono/bun";
 import postcss from "postcss";
-import tailwindcssPlugin from "@tailwindcss/postcss";
 import app from "./app";
 
 const server = new Hono();

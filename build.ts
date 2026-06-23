@@ -1,8 +1,7 @@
-import { cp, mkdir, writeFile } from "node:fs/promises";
-import { readFile } from "node:fs/promises";
+import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
+import tailwindcssPlugin from "@tailwindcss/postcss";
 import { toSSG } from "hono/ssg";
 import postcss from "postcss";
-import tailwindcssPlugin from "@tailwindcss/postcss";
 import app from "./src/app";
 
 await mkdir("./dist/css", { recursive: true });
