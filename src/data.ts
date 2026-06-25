@@ -78,6 +78,18 @@ export const projects = [
       "HTTP/2ベースで利用できるfcmのRubyクライアント",
   },
   {
+    name: "宝灯桃汁3分タイマー",
+    url: "https://mmj-timer-zero.anatofuz.net/",
+    description:
+      "宝灯桃汁の3分タイマー。コナミコマンドの隠し機能等あり",
+  },
+  {
+    name: "うろ覚え宝灯桃汁スロットマシーン",
+    url: "https://momojiruslot202504.anatofuz.net/",
+    description:
+      "宝灯桃汁の名前をうろ覚えで作れるスロットマシーン。Next.jsのSSGの練習",
+  },
+  {
     name: "Acme::MadokaMagica",
     url: "https://github.com/AnaTofuZ/perl-acme-MadokaMagica",
     description:
