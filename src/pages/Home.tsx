@@ -44,6 +44,7 @@ const ProfileCard: FC = () => (
       </div>
       <div>
         <h1 class="text-2xl font-bold">{profile.name}</h1>
+        <p class="text-base font-medium">{profile.nameEn}</p>
         <p class="text-base-content/60 font-medium">{profile.handle}</p>
         <p class="text-sm text-base-content/50 mt-1">{profile.location}</p>
       </div>

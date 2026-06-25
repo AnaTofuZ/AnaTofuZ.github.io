@@ -8,7 +8,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export const siteTitle = "AnaTofuZ's page";
 
 export const profile = {
-  name: "清水隆博　(Takahiro Shimizu)",
+  name: "清水隆博",
+  nameEn: "Takahiro Shimizu",
   handle: "@AnaTofuZ",
   location: "山梨県甲府市",
   photo: "/images/icon.png",
