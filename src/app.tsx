@@ -3,6 +3,7 @@ import { jsxRenderer } from "hono/jsx-renderer";
 import { Layout } from "./components/Layout";
 import { redirects } from "./data";
 import { Home } from "./pages/Home";
+import { Talks } from "./pages/Talks";
 
 const app = new Hono();
 
@@ -12,6 +13,7 @@ app.use(
 );
 
 app.get("/", (c) => c.render(<Home />));
+app.get("/talks", (c) => c.render(<Talks />));
 
 for (const r of redirects) {
   app.get(r.path, (c) =>
